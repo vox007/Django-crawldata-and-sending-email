@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="email-form" method="post">
+        {% csrf_token %}
+        <div class="email-div">
+            <input type="text" class="us-email" name="email" placeholder="email">
+            <input type="submit" class="email-btn" name="submit" value="Submit">
+        </div>
+    </form>
+    {% for user in old_user %}
+        <form action="{% url 'mail:choose_time' user.id %}" method="post" class="form-group">
+            {% csrf_token %}
+            <div class="container">
+                <p>{{ user.user_mail }}</p>
+                <input type="text" name="hour" class="hour" placeholder="hour">
+                <input type="text" name="minute" class="minute" placeholder="minute">
+                <input type="submit" name="Submit" value="submit" class="btn">
+            </div>
+        </form>
+        <form action="{% url 'mail:delete_user' user.id %}" method="post" class="form-time">
+            {% csrf_token %}
+            <div class="delete-button">
+                <input type="submit" name="Delete" value="delete" class="btn-delete">
+            </div>
+        </form>
+    {% endfor %}
+  </body>
+</html>
