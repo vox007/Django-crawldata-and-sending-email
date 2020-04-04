@@ -19,16 +19,17 @@ C) Chạy môi trường project
 
 Cấu trúc thư mục của project:
 
-1. manage.py: một CLI giúp ta tương tác nhanh với code Django
-  crawlweb/__init__.py: Để chỉ cho python rằng thư mục này là một package.
-  crawlweb/settings.py: Chứa các cấu hình của project
-  crawlweb/urls.py: Định nghĩa các URL của project.
-  crawlweb/wsgi.py: Dùng để deploy project của ta lên Server.
+1. Thư mục crawlweb:
+- manage.py: một CLI giúp ta tương tác nhanh với code Django
+- crawlweb/__init__.py: Để chỉ cho python rằng thư mục này là một package.
+- crawlweb/settings.py: Chứa các cấu hình của project
+- crawlweb/urls.py: Định nghĩa các URL của project.
+- crawlweb/wsgi.py: Dùng để deploy project của ta lên Server.
 
 2. Thư mục crawldata:
-  crawldata/admin.py: File giúp ta tạo các có thể thay đổi được trong trang quản trị
-  crawldata/models.py: File chứa mã code của model , tạo ra các trường của bảng
-  crawldata/tests.py: File chứa mã code của unit tests
-  crawldata/views.py: file chứa các code của api
-  crawldata/forms.py : nơi chứa các forms của project
-  crawldata/tasks.py : nơi chứa các tasks của project (crawl data và gửi mail)
+- crawldata/admin.py: File giúp ta tạo các có thể thay đổi được trong trang quản trị
+- crawldata/models.py: File chứa mã code của model , tạo ra các trường của bảng
+- crawldata/tests.py: File chứa mã code của unit tests
+- crawldata/views.py: file chứa các code của api
+- crawldata/forms.py : nơi chứa các forms của project
+- crawldata/tasks.py : nơi chứa các tasks của project (crawl data và gửi mail)
