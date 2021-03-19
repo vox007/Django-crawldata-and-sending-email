@@ -23,7 +23,7 @@ future==0.18.2
 idna==2.9
 kombu==4.6.8
 lxml==4.5.0
-Pillow==7.0.0
+Pillow==8.1.1
 premailer==3.0.0
 psutil==5.7.0
 python-crontab==2.4.0
