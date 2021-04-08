@@ -10,7 +10,7 @@ chardet==3.0.4
 cssselect==1.1.0
 cssutils==1.0.2
 dateutils==0.6.7
-Django==3.0.4
+Django==3.0.14
 django-celery==3.3.1
 django-celery-beat==2.0.0
 django-celery-results==1.2.1
